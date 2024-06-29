@@ -9,12 +9,13 @@ The Launch options include some nessecary optimizations and changes to how the g
 3.  Under tab "General" you can now input following launch options
 
 Launch options:
-> ```-high -refresh 160 -console +fps_max 0 +exec autoexec.cfg +r_drawparticles 0```
+> ```-high -refresh 160 -console -threads 9 +fps_max 0 +exec autoexec.cfg +r_drawparticles 0```
 
 Explanations:
 - ```-high``` > It will make the CS2 process higher priority, and therefore, your computer will give resources (RAM, CPU, etc) to CS2 instead of any other processes that you are running.
 - ```-refresh 160``` > It will set your default screen refresh time to 160hz.
 - ```-console``` > It will enable the developer console by default, so as to not require changing the setting every time.
+- ```-threads 9``` > It will adjust performance settings to 8 CPU Cores
 - ```+fps_max 0``` > It removes the FPS cap that is enabled by default.
 - ```+exec autoexec.cfg``` > It launches your autoexec file (see below) automatically at launch.
 - ```+r_drawparticles 0``` > It is known to improve performance (at the cost of graphics quality) by disabling particle animations.
